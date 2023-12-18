@@ -105,6 +105,8 @@ from impact.util_nodes import *
 from impact.segs_nodes import *
 from impact.special_samplers import *
 from impact.hf_nodes import *
+from impact.bridge_nodes import *
+
 import threading
 
 wildcard_path = impact.config.get_config()['custom_wildcards']
@@ -225,6 +227,7 @@ NODE_CLASS_MAPPINGS = {
     "TwoAdvancedSamplersForMask": TwoAdvancedSamplersForMask,
 
     "PreviewBridge": PreviewBridge,
+    "PreviewLatentBridge": PreviewLatentBridge,
     "ImageSender": ImageSender,
     "ImageReceiver": ImageReceiver,
     "LatentSender": LatentSender,
